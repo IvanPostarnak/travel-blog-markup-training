@@ -1,0 +1,9 @@
+.general-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.general-holder__wrapper {
+  width: 1440px;
+}
