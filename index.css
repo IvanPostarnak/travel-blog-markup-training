@@ -75,15 +75,21 @@
 
 
 .navigation__links {
+  max-width: 475px;
   flex-grow: 1;
-  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navigation__item {
-  display: inline;
+.navigation__link-holder {
+  max-width: 85px;
+  width: 100%;
+}
+
+.navigation__link {
+  display: block;
+  text-align: center;
   line-height: var(--height-of-navigation);
-  margin-right: 80px;
-  
 }
 
 .navigation__link {
