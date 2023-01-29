@@ -76,6 +76,10 @@
   margin: 80px 120px 160px 120px;
 }
 
+.slide__picture {
+  filter: brightness(80%);
+}
+
 /* || navigation-intro */
 
 .navigation-intro {
