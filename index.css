@@ -1,12 +1,12 @@
 :root {
   --width-of-content: 1440px;
-  --height-of-slide: 825px;
+  --height-of-slider: 825px;
 
-  --width-of-inner-slide: 1200px;
-  --height-of-inner-slide: 585px;
+  --width-of-inner-slider: 1200px;
+  --height-of-inner-slider: 585px;
 
   --height-of-navigation: 60px;
-  --height-of-slide-content: 415px;
+  --height-of-slider-content: 415px;
 
   --background-color: #e9e7e7;
   --black-color: #232323;
@@ -40,11 +40,11 @@
 }
 
 
-/* || SLIDE */
+/* || slider */
 
-.slide {
+.slider {
   width: 100%;
-  height: var(--height-of-slide);
+  height: var(--height-of-slider);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,17 +52,17 @@
   overflow: hidden;
 }
 
-.slide__inner {
+.slider__inner {
   position: relative;
-  width: var(--width-of-inner-slide);
-  height: var(--height-of-inner-slide);
+  width: var(--width-of-inner-slider);
+  height: var(--height-of-inner-slider);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 2;
 }
 
-.slide__inner_modificator {
+.slider__inner_modificator {
   margin: 80px 120px 160px 120px;
 }
 
@@ -124,20 +124,20 @@
   border-color: var(--background-color);
 }
 
-.slide__content {
-  height: var(--height-of-slide-content);
+.slider__content {
+  height: var(--height-of-slider-content);
   display: flex;
   justify-content: space-between;
 }
 
-.slide__text-block {
+.slider__text-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: 100px;
 }
 
-.slide__title {
+.slider__title {
   font-family: var(--font-cardo);
   font-weight: 700;
   font-size: 81px;
@@ -145,7 +145,7 @@
   letter-spacing: -3px;
 }
 
-.slide__paragraph {
+.slider__paragraph {
   margin-top: 25px;
   font-family: var(--font-lato);
   font-weight: 400;
@@ -167,13 +167,13 @@
   border-color: var(--black-color);
 }
 
-.slide__right-scratch {
+.slider__right-scratch {
   position: absolute;
   right: -10px;
   bottom: -10%;
 }
 
-.slide__left-scratch {
+.slider__left-scratch {
   position: absolute;
   left: 0;
   bottom: -45%;
