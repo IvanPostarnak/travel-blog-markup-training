@@ -1,27 +1,18 @@
 :root {
-  --width-of-content: 1440px;
-  --height-of-slide: 825px;
-
-  --width-of-inner-slide: 1200px;
-  --height-of-inner-slide: 585px;
-
-  --height-of-navigation-intro: 60px;
-
-  --height-of-button: 60px;
-  --font-size-of-button: 28px;
-
-  --height-of-slide-content: 415px;
-
-  --background-color: #e9e7e7;
+  --white-color: #e9e7e7;
   --black-color: #232323;
+  --grey-color: #c4c4c4;
 
-  --font-cardo: 'Cardo', serif;
-  --font-lato: 'Lato', sans-serif;
+  --width-of-slide: 1440px;
+  --height-of-slide: 825px;
+  --width-of-slide-inner: 1200px;
+  --height-of-slide-inner: 585px;
+
+  --font-Cardo: 'Cardo', serif;
+  --font-Lato: 'Lato', sans-serif;
 
   --top-layer: 2;
   --bottom-layer: 1;
-  --navigation-intro-links-max-height: 475px;
-  --navigation-intro-link-wrapper-max-width: 85px;
 }
 
 *,
@@ -37,7 +28,7 @@
 
 .landing-holder {
   width: 100%;
-  background-color: var(--background-color);
+  background-color: var(--white-color);
 }
 
 .container {
@@ -51,7 +42,7 @@
 
 .slide {
   width: 100%;
-  max-width: var(--width-of-content);
+  max-width: var(--width-of-slide);
   height: 100%;
 
   display: flex;
@@ -64,8 +55,8 @@
 }
 
 .slide__inner {
-  width: var(--width-of-inner-slide);
-  height: var(--height-of-inner-slide);
+  width: var(--width-of-slide-inner);
+  height: var(--height-of-slide-inner);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,11 +71,24 @@
   filter: brightness(80%);
 }
 
+.slide__right-scratch {
+  position: absolute;
+  right: -10px;
+  bottom: -10%;
+}
+
+.slide__left-scratch {
+  position: absolute;
+  left: 0;
+  bottom: -45%;
+  z-index: var(--bottom-layer);
+}
+
 /* || navigation-intro */
 
 .navigation-intro {
   width: 100%;
-  height: var(--height-of-navigation-intro);
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,26 +96,26 @@
 
 .navigation-intro__links {
   width: 100%;
-  max-width: var(--navigation-intro-links-max-height);
+  max-width: 475px;
   height: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .navigation-intro__link-wrapper {
-  max-width: var(--navigation-intro-link-wrapper-max-width);
+  max-width: 85px;
   width: 100%;
   height: 100%;
 }
 
 .navigation-intro__link {
-  font-family: var(--font-lato);
+  font-family: var(--font-Lato);
   color: var(--black-color);
   font-weight: 300;
   font-size: 28px;
   display: block;
   text-align: center;
-  line-height: var(--height-of-navigation-intro);
+  line-height: 60px;
   text-decoration: none;
 }
 
@@ -122,33 +126,46 @@
 /* || button */
 
 .button {
-  height: var(--height-of-button);
+  height: 60px;
   border-radius: 7px;
   border-width: 3px;
   border-style: solid;
   cursor: pointer;
   padding: 0 60px;
 
-  font-family: var(--font-lato);
-  font-size: var(--font-size-of-button);
+  font-family: var(--font-Lato);
+  font-size: 28px;
   font-weight: 900;
 
   color: var(--black-color);
   border-color: var(--black-color);
-  background-color: var(--background-color);
+  background-color: var(--white-color);
 }
 
 .button:hover {
-  color: var(--background-color);
-  border-color: var(--background-color);
+  color: var(--white-color);
+  border-color: var(--white-color);
   background-color: var(--black-color);
+}
+
+.button__reserve-tickets {
+  color: var(--white-color);
+  border-color: var(--white-color);
+  background-color: var(--black-color);
+  height: 55px;
+}
+
+.button__reserve-tickets:hover{
+  color: var(--black-color);
+  border-color: var(--black-color);
+  background-color: var(--white-color);
 }
 
 /* || content */
 
 .content-intro {
   width: 100%;
-  height: var(--height-of-slide-content);
+  height: 415px;
   display: flex;
   justify-content: space-between;
 }
@@ -173,7 +190,7 @@
 
 .content-intro__title {
   color: var(--black-color);
-  font-family: var(--font-cardo);
+  font-family: var(--font-Cardo);
   font-weight: 700;
   font-size: 81px;
   line-height: 1;
@@ -182,37 +199,11 @@
 
 .content-intro__paragraph {
   color: var(--black-color);
-  font-family: var(--font-lato);
+  font-family: var(--font-Lato);
   font-weight: 400;
   font-size: 17px;
 }
 
 .content-intro__paragraph_positioned{
   margin-top: 25px;
-}
-
-.button__reserve-tickets {
-  color: var(--background-color);
-  border-color: var(--background-color);
-  background-color: var(--black-color);
-  height: 55px;
-}
-
-.button__reserve-tickets:hover{
-  color: var(--black-color);
-  border-color: var(--black-color);
-  background-color: var(--background-color);
-}
-
-.slide__right-scratch {
-  position: absolute;
-  right: -10px;
-  bottom: -10%;
-}
-
-.slide__left-scratch {
-  position: absolute;
-  left: 0;
-  bottom: -45%;
-  z-index: var(--bottom-layer);
 }
