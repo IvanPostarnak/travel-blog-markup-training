@@ -409,6 +409,7 @@
   position: absolute;
   bottom: 30px;
   right: 0;
+  cursor: pointer;
 }
 
 .grid-image-1 {
@@ -491,4 +492,10 @@
 
 .sixth_paragraph {
   color: var(--white-color);
+}
+
+.sixth-slide_left_scratch {
+  position: absolute;
+  bottom: -5%;
+  left: 0;
 }
