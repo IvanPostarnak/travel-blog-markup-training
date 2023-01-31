@@ -635,3 +635,17 @@
   bottom: 0;
   right: -39px;
 }
+
+.eighth-left-scratch {
+  position: absolute;
+  z-index: var(--bottom-layer);
+  bottom: 75%;
+  left: 0;
+}
+
+.eighth-right-scratch {
+  position: absolute;
+  z-index: var(--bottom-layer);
+  bottom: 0;
+  right: 0;
+}
