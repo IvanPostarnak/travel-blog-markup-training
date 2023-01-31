@@ -551,6 +551,10 @@
   font-weight: 900;
 }
 
+.seventh-cross {
+  cursor: pointer;
+}
+
 /* 8 ////////////////////////////*/
 
 .eighth-inner {
@@ -620,6 +624,7 @@
   background-color: var(--white-color);
   z-index: var(--top-layer);
   position: absolute;
+  cursor: pointer;
 }
 
 .arrow-left {
